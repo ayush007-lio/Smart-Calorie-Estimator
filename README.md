@@ -49,13 +49,26 @@ Smart-Calorie-Estimator/
 ├── README.md              # Project documentation (You are reading this)
 └── results_plot.png       # Generated comparison graph (AI vs Medical)
 
-📊 Key Results & PerformanceThe models were evaluated using RMSE (Root Mean Squared Error) and R² Score.Model / ApproachR² ScoreRMSEPerformance VerdictMedical Eq (Keytel)~0.86HighGood baseline, but fails at high intensity.Linear Regression~0.96ModerateBetter, but misses the physiological curve.Polynomial Regression~0.99LowestMatches human physiology perfectly.Observation: The Polynomial Regression model reduced the error rate significantly compared to the medical equation, proving that AI can personalize fitness tracking better than static formulas.🚀 How to Run the ProjectPrerequisitesMake sure you have Python installed.Step 1: Clone the RepositoryBashgit clone [https://github.com/ayush007-lio/Smart-Calorie-Estimator.git](https://github.com/ayush007-lio/Smart-Calorie-Estimator.git)
+## 📊 Key Results & Performance
+
+The models were evaluated using **RMSE (Root Mean Squared Error)** and **R² Score**.
+
+| Model / Approach | R² Score | RMSE | Performance Verdict |
+| :--- | :--- | :--- | :--- |
+| **Medical Eq (Keytel)** | ~0.86 | High | Good baseline, but fails at high intensity. |
+| **Linear Regression** | ~0.96 | Moderate | Better, but misses the physiological curve. |
+| **Polynomial Regression** | **~0.99** | **Lowest** | **Matches human physiology perfectly.** |
+
+> **Observation:** The Polynomial Regression model reduced the error rate significantly compared to the medical equation, proving that AI can personalize fitness tracking better than static formulas.
+
+---
+
+## 🚀 How to Run the Project
+
+### Prerequisites
+Make sure you have **Python** installed.
+
+### Step 1: Clone the Repository
+```bash
+git clone [https://github.com/ayush007-lio/Smart-Calorie-Estimator.git](https://github.com/ayush007-lio/Smart-Calorie-Estimator.git)
 cd Smart-Calorie-Estimator
-Step 2: Install DependenciesIt is recommended to use a virtual environment.Bashpip install -r requirements.txt
-Step 3: Run the AnalysisExecute the main script. The script uses the Rich library to provide a colorful, summarized output in your terminal.Bashpython main.py
-Step 4: View ResultsCheck the Terminal for the R² and RMSE comparison table.Open results_plot.png in the folder to see the visual graph comparing the "Medical Equation" vs "AI Model."💡 How to UseThis project is designed as a backend prototype for fitness apps.Input: The model accepts: Gender, Age, Height, Weight, Duration, Heart_Rate, Body_Temp.Processing: It runs these inputs through the trained Polynomial Regressor.Output: It returns the precise calories burned (e.g., 245.3 kcal).🤝 Contribution & LicenseFeel free to fork this repository and submit pull requests.Author: Ayush (Eng. Student, CS-AI)License: MIT
-### Why this README works:
-1.  **Badges:** It looks like a "real" open-source tool immediately.
-2.  **The "Pin-to-Pin" Structure:** I added the file tree so the evaluator knows you understand your own file organization.
-3.  **The Comparison Table:** This is the most important part. It proves your project works.
-4.  **Medical Context:** It emphasizes that you know about the "Keytel Equation," showing yo
