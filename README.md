@@ -49,26 +49,3 @@ Smart-Calorie-Estimator/
 ├── README.md              # Project documentation (You are reading this)
 └── results_plot.png       # Generated comparison graph (AI vs Medical)
 
-## 📊 Key Results & Performance
-
-The models were evaluated using **RMSE (Root Mean Squared Error)** and **R² Score**.
-
-| Model / Approach | R² Score | RMSE | Performance Verdict |
-| :--- | :--- | :--- | :--- |
-| **Medical Eq (Keytel)** | ~0.86 | High | Good baseline, but fails at high intensity. |
-| **Linear Regression** | ~0.96 | Moderate | Better, but misses the physiological curve. |
-| **Polynomial Regression** | **~0.99** | **Lowest** | **Matches human physiology perfectly.** |
-
-> **Observation:** The Polynomial Regression model reduced the error rate significantly compared to the medical equation, proving that AI can personalize fitness tracking better than static formulas.
-
----
-
-## 🚀 How to Run the Project
-
-### Prerequisites
-Make sure you have **Python** installed.
-
-### Step 1: Clone the Repository
-```bash
-git clone [https://github.com/ayush007-lio/Smart-Calorie-Estimator.git](https://github.com/ayush007-lio/Smart-Calorie-Estimator.git)
-cd Smart-Calorie-Estimator
