@@ -1,34 +1,50 @@
-# Calorie Prediction Project
+# 🏃‍♂️ Smart Calorie Estimator: AI vs. Medical Science
 
-This project compares a medical formula (Keytel) with several regression models to predict calories burned during exercise. It produces a colorful terminal summary and a polished comparison plot.
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Regression-green)
+![Status](https://img.shields.io/badge/Status-Completed-success)
 
-## Requirements
+## 📋 Project Overview
+This project is an advanced regression analysis aimed at predicting **calories burned** during exercise. Unlike standard fitness trackers that rely on static mathematical formulas (like the Keytel or Harris-Benedict equations), this project utilizes **Machine Learning (Polynomial Regression)** to learn the non-linear physiological patterns of the human body.
 
-Install dependencies (recommended to use the included venv or create one):
+The core objective is to **benchmark AI models against established medical standards** to prove that Machine Learning provides significantly higher accuracy in physiological estimations.
 
-```powershell
-python -m pip install -r requirements.txt
-```
+---
 
-## Run
+## 🧠 The Problem Statement
+Standard calorie calculators often fail because they assume a **linear relationship** between heart rate and energy expenditure. However, human physiology is complex:
+* As heart rate increases, energy burn does not increase in a perfectly straight line.
+* Factors like body temperature and weight have multicollinear relationships.
 
-From the project root:
+**The Solution:** By implementing **Polynomial Regression (Degree 2)** and **Ridge Regression**, this model captures these complex curves and interactions, outperforming traditional medical equations.
 
-```powershell
-C:/Users/LENOVO/OneDrive/Desktop/Calorie_Prediction_Project/venv/Scripts/python.exe main.py
-```
+---
 
-Or, if using your system python:
+## ⚙️ Tech Stack
+* **Language:** Python 3.x
+* **Data Processing:** Pandas, NumPy
+* **Machine Learning:** Scikit-Learn (Linear, Ridge, Polynomial Regression)
+* **Visualization:** Matplotlib, Seaborn
+* **UI/Terminal:** Rich (for beautiful CLI output)
 
-```powershell
-python main.py
-```
+---
 
-The script will print a colorful model comparison and save `results_plot.png` in the project folder. Open that image to show the visual comparison to your evaluator.
+## 📂 Repository Structure
+Here is the "pin-to-pin" description of every file in this project:
 
-## Notes for evaluator
-
-- The dataset files `calories.csv` and `exercise.csv` should be in the project root.
-- `rich` is used for terminal styling; plots are saved as PNG for presentation.
-
-Good luck impressing your evaluator! ✨# Smart-Calorie-Estimator
+```text
+Smart-Calorie-Estimator/
+│
+├── data/
+│   ├── calories.csv       # Target variable data (Calories burned)
+│   └── exercise.csv       # Feature data (Heart rate, duration, temp, etc.)
+│
+├── main.py                # 🚀 The BRAIN of the project. Contains:
+│                          #    - Data Preprocessing & Merging
+│                          #    - Medical Equation Logic (Keytel Formula)
+│                          #    - Model Training (Linear, Ridge, Poly)
+│                          #    - Evaluation & Plotting
+│
+├── requirements.txt       # List of libraries needed to run the project
+├── README.md              # Project documentation (You are reading this)
+└── results_plot.png       # Generated comparison graph (AI vs Medical)
